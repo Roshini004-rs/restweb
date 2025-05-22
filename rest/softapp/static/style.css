@@ -1,0 +1,232 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h2.title {
+  font-size: 2.5em;
+  color: #264653;
+  margin-top: 40px;
+  text-align: center;
+}
+
+footer {
+  background-color: #f4a261;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation Bar */
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #f4a261;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #e76f51;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('images/banner.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 4em;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  animation: slideInDown 1.5s ease-out;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Menu Page Styles */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 15px;
+  color: #f4a261;
+}
+
+.card p {
+  color: #777;
+  margin: 10px 0;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f4a261;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #e76f51;
+}
+
+/* Admin Page Styles */
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.admin-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.admin-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.admin-card h3 {
+  margin: 0;
+  color: #f4a261;
+}
+
+.admin-card p {
+  margin-top: 5px;
+  font-size: 0.95rem;
+}
+
+/* Highlights Section */
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  justify-content: space-around;
+  background: #fff3e6;
+}
+
+.highlight-card {
+  width: 300px;
+  margin: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-10px);
+}
+
+.highlight-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.highlight-card h3 {
+  margin: 10px;
+  color: #264653;
+}

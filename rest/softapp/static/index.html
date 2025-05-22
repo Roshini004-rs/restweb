@@ -1,0 +1,151 @@
+index.html
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun With Bun - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('https://as1.ftcdn.net/v2/jpg/11/36/09/82/1000_F_1136098230_TIg7LlstcM8cmpqQqVhaOMRAMZbNHgZI.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .hero h1{
+      font-size: 4em;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      animation: slideInDown 1.5s ease-out;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      background-color: #f4a261;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+    .nav a:hover {
+      background-color: #e76f51;
+    }
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      justify-content: space-around;
+      background: #fff3e6;
+    }
+    .highlight-card {
+      width: 300px;
+      margin: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .highlight-card:hover {
+      transform: translateY(-10px);
+    }
+    .highlight-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .highlight-card h3 {
+      margin: 10px;
+      color: #264653;
+    }
+    .highlight-card p {
+      padding: 0 10px 10px;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      background-color: #f4a261;
+      color: white;
+      padding: 20px;
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="admin.html">Administration</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <section class="hero">
+    <h1>Welcome to CHAI TIMEEE👩‍🍳 A Luxurious Multicuisine Restaurant & Artisanal Bakery</h1>
+    
+  </section>
+
+  <section class="highlights">
+    <div class="highlight-card">
+      <img src="sign.dish.jpg" alt="Dish 1">
+      <h3>Signature Bun Treats</h3>
+      <p>Delicious handcrafted buns with sweet and savory flavors.</p>
+    </div>
+    <div class="highlight-card">
+      <img src="sandwich.cake.jpg" alt="Sandwich">
+      <h3>Gourmet Sandwiches</h3>
+      <p>Fresh, filling, and perfect for a satisfying meal.</p>
+    </div>
+    <div class="highlight-card">
+      <img src="lava cake.jpg" alt="Choco Lava Cake">
+      <h3>Heavenly Desserts</h3>
+      <p>End your meal with our irresistible sweets.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fun With Bun. Created by NITHYASREE.</p>
+  </footer>
+</body>
+</html>
+
